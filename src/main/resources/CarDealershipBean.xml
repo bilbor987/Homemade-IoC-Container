@@ -1,0 +1,19 @@
+<beans>
+    <bean name="dealer1" class="com.upt.cbse.test.dealership.Dealer">
+        <property name="name" value="Skoda"/>
+    </bean>
+
+    <bean name="dealer2" class="com.upt.cbse.test.dealership.Dealer">
+        <property name="name" value="VW"/>
+    </bean>
+
+    <bean name="person" class="com.cbse.test.dealership.Person">
+        <property name="firstName" value="Bogdan"/>
+        <property name="lastName" value="Pocol"/>
+    </bean>
+
+    <bean name="storeManager" class="com.cbse.test.dealership.Manager">
+        <property name="person" ref="person"/>
+        <property name="store" ref="dealer1"/>
+    </bean>
+</beans>

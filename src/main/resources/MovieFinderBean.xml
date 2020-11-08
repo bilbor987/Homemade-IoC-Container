@@ -1,0 +1,10 @@
+<beans>
+    <bean name="finder" class="com.upt.cbse.test.movie.MovieFinder">
+        <property name="file" value="fileName"/>
+    </bean>
+
+    <bean name="lister" class="com.upt.cbse.test.movie.MovieLister">
+        <property name="finder" ref="finder_ref"/>
+    </bean>
+</beans>
+
